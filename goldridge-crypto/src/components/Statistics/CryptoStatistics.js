@@ -4,7 +4,7 @@ const CryptoStatistics = () => {
   return (
     <div className='flex flex-row justify-between'>
         <div>
-            <h3>Cryptocurrency market statistics</h3>
+            <h3 className='text-lg'>Cryptocurrency market statistics</h3>
             <p>An overview of the complete cryptocurrency market, including the number of 
             cryptocurrencies, the total market cap, and trading volume.</p>
             <p><a href='https://to.overview'>More statistics</a></p>

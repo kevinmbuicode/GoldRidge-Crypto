@@ -10,9 +10,9 @@ const NavBar = () => {
             <p>Best image</p>
             <p>Coins 15309</p>
         </div>
-        <div>
+        <div className='text-xs'>
             <p>Honduras to  
-            <a href='https://cointelegraph.com/news/honduras-attracts-crypto-investor-tourists-with-bitcoin-valley'>
+            <a href='https://cointelegraph.com/news/honduras-attracts-crypto-investor-tourists-with-bitcoin-valley'> 
               Boost </a>
             Tourism with 'Crypto Valley'</p>
         </div>    
