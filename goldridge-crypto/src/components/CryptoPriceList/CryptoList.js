@@ -1,13 +1,12 @@
 import React from 'react';
 import DropDown from '../Selectors/DropDownUI'
 import { CurrencySelect, MarketCapSelect, PeriodSelect } from '../Selectors/DropDownUI';
-import CoinsTable from '../Table/CoinsTable';
 
 
 
 
-const CryptoList = () => {
-
+const CryptoList = (props) => {
+    console.log(props)
 
   return (
     <div className='flex flex-col justify-center'>
@@ -20,7 +19,6 @@ const CryptoList = () => {
             <MarketCapSelect/>
             <PeriodSelect/>
         </div>
-        <CoinsTable/>
     </div>
   )
 }

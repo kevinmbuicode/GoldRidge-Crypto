@@ -1,4 +1,4 @@
-import CryptoListCard from "./Card/CryptoCard";
+//import CryptoListCard from "./Card/CryptoCard";
 
 function CoinsTable() {
     return ( 
@@ -14,11 +14,10 @@ function CoinsTable() {
                 </thead>
                 <tbody>
                     <tr>
-                        <CryptoListCard/>
-                        {/* <th scope="row">1</th>
-                        <td>$ 22,878</td>
-                        <td>$436</td>
-                        <td>-20%</td> */}
+                        <th scope="row">1</th>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
                     </tr>
                 </tbody>
             </table>
