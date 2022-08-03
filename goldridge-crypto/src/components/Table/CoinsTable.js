@@ -1,26 +1,40 @@
 //import CryptoListCard from "./Card/CryptoCard";
+import Table from 'react-bootstrap/Table';
+
 
 function CoinsTable() {
     return ( 
         <div className="flex flex-row">
-            <table className="table">
-                <thead className="flex flex-row">
+            <Table striped bordered hover size="sm">
+                <thead>
                     <tr>
-                        <th scope="table-columns">ALL Coins</th>
-                        <th scope="table-columns">PRICE</th>
-                        <th scope="table-columns">MARKET CAP</th>
-                        <th scope="table-columns">24H</th>
+                    <th>Rank</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Username</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <th scope="row">1</th>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
+                    <td>1</td>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                    </tr>
+                    <tr>
+                    <td>2</td>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                    </tr>
+                    <tr>
+                    <td>3</td>
+                    <td>Larry</td>
+                    <td>The Bird</td>
+                    <td>@twitter</td>
                     </tr>
                 </tbody>
-            </table>
+            </Table>
         </div>
      );
 }
