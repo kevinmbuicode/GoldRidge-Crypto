@@ -35,17 +35,25 @@ function App() {
     fetchCoins()
   }, [apiKey, baseUrl, proxyUrl])
 
-  // console.log(coins.coins)
+  // console.log(coins.coins). coins.coins?.map (Added ? for ask if the coins exist first, stackoverflow)
   let coinElements = coins.coins?.map(coin => {
     return(
-      <CryptoListCard
+      <CoinsTable
         id={coin.rank}
         icon={coin.iconUrl}
         price={coin.price}
         name={coin.name}
-        martetCap={coin.martetCap}
-        day={coin.change}
+        marketCap={coin.marketCap}
+        change={coin.change}
       />
+      // <CryptoListCard
+      //   id={coin.rank}
+      //   icon={coin.iconUrl}
+      //   price={coin.price}
+      //   name={coin.name}
+      //   martetCap={coin.martetCap}
+      //   day={coin.change}
+      // />
     )
   })
 
@@ -54,7 +62,6 @@ function App() {
       <NavBar/>
       <Title/>
       <CryptoList/>
-      <CoinsTable/>
       {coinElements}
       <CryptoStatistics/>
       <PartnersClients/>
